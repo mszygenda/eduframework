@@ -9,6 +9,13 @@ RequestHandler = function() {
     r = new Router(urlObj.pathname);
     Config.routes(r); 
 
+    // Routing error
+    if(!r.matchFound) {
+      resp.statusCode = 404;
+      resp.end();
+      return;
+    }
+
     cm.instance().invokeAction(
        r.controller,
        r.action,

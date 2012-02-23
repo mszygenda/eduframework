@@ -6,6 +6,17 @@ Router = function(pathname) {
   this.controller = '';
   this.action = '';
 
+  this.transformPattern = function(pattern) {
+    if(pattern.charAt(0) != '^') {
+      pattern = "^" + pattern;
+    }
+    if(pattern.charAt(pattern.length - 1) != '$') {
+      pattern = pattern + '$';
+    }
+
+    return pattern;
+  }
+
   this.extractVariables = function(pattern, path)
   {
     var variables = new Object();
@@ -33,6 +44,8 @@ Router = function(pathname) {
     {
        return false;  
     }
+
+    pattern = this.transformPattern(pattern);
 
     var valuePattern = pattern.replace(new RegExp('(:[a-z]+)', 'g'), '(\\w+)');
     regexp = new RegExp(valuePattern, '');
