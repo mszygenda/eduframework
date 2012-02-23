@@ -20,7 +20,6 @@ Router = function(pathname) {
     while(name = varRegexp.exec(pattern))
     {
       var name = name[1].substr(1);
-      console.log(name);
       variables[name] = i < values.length ? values[i] : null
       i++;
     }
@@ -37,7 +36,6 @@ Router = function(pathname) {
 
     var valuePattern = pattern.replace(new RegExp('(:[a-z]+)', 'g'), '(\\w+)');
     regexp = new RegExp(valuePattern, '');
-    console.log(valuePattern);
     
     // If current pattern doesn't match path return false
     if(!regexp.test(this.path))
