@@ -1,4 +1,4 @@
-var service = require('./server/service.js');
+var service = require('./lib/service.js');
 
 function onStart() {
   console.log("ready to accept connections");
