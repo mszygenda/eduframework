@@ -1,0 +1,5 @@
+function routes(r) {
+
+    r.match('/bla/:id/:name', 'some#action'); 
+
+}
