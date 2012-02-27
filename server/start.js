@@ -1,14 +1,15 @@
-var service = require('./lib/service.js');
+Core = require('./lib/core.js')
 
-function onStart() {
+var onStart = function() {
   console.log("ready to accept connections");
 }
 
-function onEnd() {
+var onEnd = function() {
   console.log("bye");
 }
 
-var s = new Service();
+Core.initialize();
+var s = new Core.HttpEngine.Service();
 
 s.on('start', onStart);
 s.on('stop', onEnd);

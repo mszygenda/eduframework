@@ -1,4 +1,4 @@
-Router = function(pathname) {
+var Router = function(pathname) {
   this.matchFound = false;
   this.path = pathname;
   this.variables = new Array();
@@ -72,3 +72,5 @@ Router = function(pathname) {
     routes(this);
   }
 }
+
+exports.Router = Router

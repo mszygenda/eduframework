@@ -1,14 +1,11 @@
-require('./core.js');
-require('./request_handler.js');
-
-Service = function() {
+var Service = function() {
  var self = this;
 
  this.port = 3000
 
  this.start = function() {
    var httpServer = http.createServer(function(req, resp) {
-     var requestHandler = new RequestHandler();
+     var requestHandler = new Core.HttpEngine.RequestHandler();
      requestHandler.handle(self, req, resp);
    })
 
@@ -22,3 +19,5 @@ Service = function() {
 }
 
 sys.inherits(Service, events.EventEmitter);
+
+exports.Service = Service
