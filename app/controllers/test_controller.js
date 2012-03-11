@@ -7,6 +7,7 @@ TestController = function() {
       this.response.write(param + " = " + this.parameters[param]);
       this.response.write('\n');
     }
-    this.response.end("Test controller greets you!\n");
+    //this.response.end("Test controller greets you!\n");
+    this.respond(); 
   }
 }
