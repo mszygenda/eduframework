@@ -9,7 +9,7 @@ var onEnd = function() {
 }
 
 Core.initialize();
-var s = new Core.HttpEngine.Service();
+var s = Core.HttpEngine.createService();
 
 s.on('start', onStart);
 s.on('stop', onEnd);
