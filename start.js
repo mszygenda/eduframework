@@ -1,10 +1,10 @@
 Core = require('./lib/core.js')
 
-var onStart = function() {
+var onStart = function () {
   console.log("ready to accept connections");
 }
 
-var onEnd = function() {
+var onEnd = function () {
   console.log("bye");
 }
 
