@@ -1,4 +1,4 @@
-Core = require('./lib/core.js')
+Core = require('../lib/core.js')
 
 var onStart = function () {
   console.log("ready to accept connections");
