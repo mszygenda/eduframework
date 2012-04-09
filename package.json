@@ -1,0 +1,22 @@
+{
+  "name": "ef",
+  "description": "Simple web framework made for educational purpose which follows MVC pattern",
+  "keywords": [
+    "framework",
+    "mvc",
+    "eduframework",
+    "web" 
+  ],
+  "version": "0.0.1",
+  "homepage": "http://sigma.inf.ug.edu.pl/~mszygenda",
+  "author": {
+    "name": "Mateusz Szygenda",
+    "email": "mateusz.szygenda@gmail.com"
+  },
+  "dependencies": {
+    "memorystream": "= 0.1.0"
+  },
+  "scripts": {
+    "install": "scripts/install.sh"
+  }
+}
