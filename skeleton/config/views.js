@@ -1,5 +1,5 @@
 exports.merge({
   templateEngines: {
-    html: { module: 'ef-mustache', class: 'MustacheTemplateEngine' }
+    html: { module: 'ef-mustache', 'class': 'MustacheTemplateEngine' }
   }
-})
+});

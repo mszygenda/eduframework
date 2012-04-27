@@ -1,5 +1,6 @@
-TestController = function() {
-  this.test = function() {
-    this.respond(); 
-  }
+var controller = actions = {};
+exports.controller = controller;
+
+actions.test = function() {
+  this.respond(); 
 }

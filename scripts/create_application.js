@@ -6,12 +6,12 @@ var handleBuilderError = function (err) {
     } else {
       console.log("Undefined error: " + err.toString());
     }
-}
+};
 
 var showSuccessInformation = function () {
   console.log("Application was built successfully");
   console.log("You can execute it by typing ef-start command in application directory");
-}
+};
 
 var buildApplication = function () {
   parameters = parseParameters(process.argv);
@@ -23,7 +23,7 @@ var buildApplication = function () {
   catch (err) {
     handleBuilderError(err);
   }
-}
+};
 
 var parseParameters = function (argv) {
   params = {
@@ -31,6 +31,6 @@ var parseParameters = function (argv) {
   };
 
   return params;
-}
+};
 
 buildApplication();
