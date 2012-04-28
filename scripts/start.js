@@ -1,8 +1,8 @@
-Core = require('../lib/core.js')
+var Core = require('../lib/core.js');
 
 var onStart = function () {
   console.log("ready to accept connections");
-  console.log("listening on port " + s.port);
+  console.log("listening on port " + Core.HttpEngine.server.port);
 }
 
 var onEnd = function () {
@@ -10,8 +10,7 @@ var onEnd = function () {
 }
 
 Core.initialize();
-var s = Core.HttpEngine.createService();
 
-s.on('start', onStart);
-s.on('stop', onEnd);
-s.start();
+Core.HttpEngine.server.on('start', onStart);
+Core.HttpEngine.server.on('stop', onEnd);
+Core.HttpEngine.server.start();
