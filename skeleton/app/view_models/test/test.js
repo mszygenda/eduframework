@@ -1,3 +1,3 @@
-exports.viewModel = function () {
-  this.msg = "Hello World!";
-}
+var viewModel = exports.viewModel = {};
+
+viewModel.msg = "Hello World!";

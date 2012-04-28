@@ -1,6 +1,5 @@
-var controller = actions = {};
-exports.controller = controller;
+var actions = exports.controller = {};
 
-actions.test = function() {
+actions.test = function () {
   this.respond(); 
-}
+};
