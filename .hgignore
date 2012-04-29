@@ -2,4 +2,5 @@ syntax: glob
 
 *~
 .*.swp
+.*.swo
 node_modules

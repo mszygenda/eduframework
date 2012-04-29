@@ -14,7 +14,6 @@
     "email": "mateusz.szygenda@gmail.com"
   },
   "dependencies": {
-    "memorystream": "= 0.1.0",
     "connect": "= 2.1.2"
   },
   "scripts": {

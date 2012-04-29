@@ -1,3 +1,5 @@
 var viewModel = exports.viewModel = {};
 
-viewModel.msg = "Hello World!";
+viewModel.msg = function () {
+  return "Hello world";
+}
