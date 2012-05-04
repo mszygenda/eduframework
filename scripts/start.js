@@ -9,8 +9,8 @@ var onEnd = function () {
   console.log("shutting down server");
 }
 
-Core.initialize();
-
-Core.HttpEngine.server.on('start', onStart);
-Core.HttpEngine.server.on('stop', onEnd);
-Core.HttpEngine.server.start();
+Core.initialize(function () {
+  Core.HttpEngine.server.on('start', onStart);
+  Core.HttpEngine.server.on('stop', onEnd);
+  Core.HttpEngine.server.start();
+});

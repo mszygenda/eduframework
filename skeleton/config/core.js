@@ -1,6 +1,6 @@
 var root = EduFramework.applicationPath;
 
-exports.merge({
+exports.config = {
   rootPath: root,
   viewsPath: root + '/app/views',
   viewModelsPath: root + '/app/view_models',
@@ -8,4 +8,4 @@ exports.merge({
   server: {
     port: 3000
   }
-})
+};
