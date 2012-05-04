@@ -11,7 +11,7 @@ exports.config = {
     port: 3000
   },
 
-  modules: { 
-    'ef-mustache': { format: 'html' }
-  }
+  modules: [ 
+    'ef-mustache'
+  ]
 };
