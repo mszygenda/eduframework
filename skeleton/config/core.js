@@ -5,6 +5,7 @@ exports.config = {
   viewsPath: root + '/app/views',
   viewModelsPath: root + '/app/view_models',
   controllerPath: root + '/app/controllers',
+  staticPath: root + '/app/static',
   logsPath: root + '/logs',
 
   server: {
