@@ -9,7 +9,7 @@ exports.config = {
   logsPath: root + '/logs',
 
   classDirectories: [
-    root + 'app/models'
+    root + '/app/models'
   ],
 
   server: {
