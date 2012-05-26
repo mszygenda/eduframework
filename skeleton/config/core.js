@@ -16,6 +16,8 @@ exports.config = {
     port: 3000
   },
 
+  loggingLevel: 'error',
+
   modules: [ 
     'ef-mustache'
   ]
