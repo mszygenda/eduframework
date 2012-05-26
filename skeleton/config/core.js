@@ -8,6 +8,10 @@ exports.config = {
   staticPath: root + '/app/static',
   logsPath: root + '/logs',
 
+  classDirectories: [
+    root + 'app/models'
+  ],
+
   server: {
     port: 3000
   },
